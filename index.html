@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok Voice Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tik Tok Voice Generator</h1>
+            <nav>
+                <select id="language-selector" class="language-select">
+                    <option value="en-US">English (US)</option>
+                    <option value="en-UK">English (UK)</option>
+                    <option value="zh">中文</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="ru">Русский</option>
+                    <option value="pt-BR">Português (Brasil)</option>
+                    <option value="fr">Français</option>
+                    <option value="ja">日本語</option>
+                    <option value="es-MX">Español (México)</option>
+                </select>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>TikTok Voice Generator</h2>
+            <p>Transform text into TikTok voices using our text-to-speech technology, easily downloadable from your browser or mobile phone.</p>
+            
+            <form id="voice-form">
+                <div class="input-group">
+                    <label for="language">Language</label>
+                    <select id="language" name="language">
+                        <option value="en-US">English US</option>
+                        <option value="en-UK">English UK</option>
+                        <option value="es-ES">Spanish</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="voice">Voice</label>
+                    <select id="voice" name="voice">
+                        <option value="female-original">Female - Original</option>
+                        <option value="male-original">Male - Original</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="speed">Speed</label>
+                    <div class="speed-control">
+                        <input type="range" id="speed" name="speed" 
+                               min="0.5" max="2" step="0.1" value="1">
+                        <span class="speed-value">1x</span>
+                    </div>
+                </div>
+
+                <textarea id="text-input" name="text" placeholder="Type text here" maxlength="300"></textarea>
+                <div class="char-count">0/300</div>
+
+                <button type="submit" id="generate-btn">Generate</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

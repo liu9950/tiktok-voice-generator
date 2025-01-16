@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generator Suara Tik Tok</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Generator Suara Tik Tok</h1>
+            <nav>
+                <select id="language-selector" class="language-select">
+                    <option value="en-US">English (US)</option>
+                    <option value="en-UK">English (UK)</option>
+                    <option value="zh">中文</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="id" selected>Bahasa Indonesia</option>
+                    <option value="ru">Русский</option>
+                    <option value="pt-BR">Português (Brasil)</option>
+                    <option value="fr">Français</option>
+                    <option value="ja">日本語</option>
+                    <option value="es-MX">Español (México)</option>
+                </select>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Generator Suara TikTok</h2>
+            <p>Ubah teks menjadi suara TikTok menggunakan teknologi text-to-speech kami, mudah diunduh dari browser atau ponsel Anda.</p>
+            
+            <form id="voice-form">
+                <div class="input-group">
+                    <label for="language">Bahasa</label>
+                    <select id="language" name="language">
+                        <option value="en-US">Bahasa Inggris (AS)</option>
+                        <option value="en-UK">Bahasa Inggris (Inggris)</option>
+                        <option value="id" selected>Bahasa Indonesia</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="voice">Suara</label>
+                    <select id="voice" name="voice">
+                        <option value="female-original">Perempuan - Asli</option>
+                        <option value="male-original">Laki-laki - Asli</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="speed">Kecepatan</label>
+                    <div class="speed-control">
+                        <input type="range" id="speed" name="speed" 
+                               min="0.5" max="2" step="0.1" value="1">
+                        <span class="speed-value">1x</span>
+                    </div>
+                </div>
+
+                <textarea id="text-input" name="text" placeholder="Ketik teks di sini" maxlength="300"></textarea>
+                <div class="char-count">0/300</div>
+
+                <button type="submit" id="generate-btn">Hasilkan Suara</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html> 

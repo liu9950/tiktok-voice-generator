@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik Tok 语音生成器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tik Tok 语音生成器</h1>
+            <nav>
+                <select id="language-selector" class="language-select">
+                    <option value="en-US">English (US)</option>
+                    <option value="en-UK">English (UK)</option>
+                    <option value="zh" selected>中文</option>
+                    <option value="vi">Tiếng Việt</option>
+                    <option value="id">Bahasa Indonesia</option>
+                    <option value="ru">Русский</option>
+                    <option value="pt-BR">Português (Brasil)</option>
+                    <option value="fr">Français</option>
+                    <option value="ja">日本語</option>
+                    <option value="es-MX">Español (México)</option>
+                </select>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>TikTok 语音生成器</h2>
+            <p>使用我们的文字转语音技术将文本转换为 TikTok 语音，可以轻松地从浏览器或手机下载。</p>
+            
+            <form id="voice-form">
+                <div class="input-group">
+                    <label for="language">语言</label>
+                    <select id="language" name="language">
+                        <option value="en-US">英语（美国）</option>
+                        <option value="en-UK">英语（英国）</option>
+                        <option value="zh" selected>中文</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="voice">声音</label>
+                    <select id="voice" name="voice">
+                        <option value="female-original">女声 - 原声</option>
+                        <option value="male-original">男声 - 原声</option>
+                    </select>
+                </div>
+
+                <div class="input-group">
+                    <label for="speed">语速</label>
+                    <div class="speed-control">
+                        <input type="range" id="speed" name="speed" 
+                               min="0.5" max="2" step="0.1" value="1">
+                        <span class="speed-value">1x</span>
+                    </div>
+                </div>
+
+                <textarea id="text-input" name="text" placeholder="在此输入文字" maxlength="300"></textarea>
+                <div class="char-count">0/300</div>
+
+                <button type="submit" id="generate-btn">生成语音</button>
+            </form>
+
+            <div class="qa-section">
+                <h2>关于 TikTok 语音生成器</h2>
+                
+                <div class="qa-item">
+                    <h3>Q1: 什么是 TikTok 语音生成器？</h3>
+                    <p>这是一个专业的在线文字转语音工具，能够将您输入的文字转换成 TikTok 风格的语音。支持多种语言和语音风格，适用于视频创作、内容制作等多种场景。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q2: 这个网站适合谁使用？</h3>
+                    <p>TikTok 语音生成器适用于以下几类用户：</p>
+                    <ul>
+                        <li>TikTok 创作者：需要为视频添加专业配音</li>
+                        <li>内容营销人员：制作品牌视频、广告或营销内容</li>
+                        <li>视频制作团队：批量生成不同风格的语音，满足多样化需求</li>
+                        <li>教育工作者和教师：为在线课程或教学视频配音</li>
+                        <li>播客创作者：为播客或有声内容制作配音</li>
+                    </ul>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q3: 这个网站可以提供哪些功能？</h3>
+                    <ul>
+                        <li>文本转语音：输入文本，选择语音风格，系统自动生成语音</li>
+                        <li>语音风格选择：提供多种语音风格和语言选项</li>
+                        <li>语速调节：可以调整语音播放的速度</li>
+                        <li>实时预览：生成语音后，用户可以立即试听效果</li>
+                        <li>下载功能：支持将生成的语音下载保存</li>
+                        <li>多语言支持：支持多种语言的语音生成</li>
+                    </ul>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q4: TikTok 语音生成器是如何工作的？</h3>
+                    <p>使用步骤非常简单：</p>
+                    <ul>
+                        <li>输入文本：在网站的文本框输入您想要转换的文字</li>
+                        <li>选择语音风格：从多个语音风格中选择一个合适的声音</li>
+                        <li>调整参数：根据需要调整语速等参数</li>
+                        <li>生成预览：点击生成按钮后，系统会自动转换文字为语音</li>
+                        <li>下载音频：如果您对生成的语音满意，可以直接下载使用</li>
+                    </ul>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q5: 生成的语音质量怎么样？</h3>
+                    <p>我们使用最新的 AI 语音合成技术，确保生成的语音具有自然、清晰的特点，音质优良，可直接用于视频制作。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q6: 是否支持多语言生成语音？</h3>
+                    <p>是的，TikTok 语音生成器支持多种语言，包括中文、英语、日语、韩语、西班牙语等主流语言，满足不同用户的需求。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q7: 我可以将生成的语音用于哪些场景？</h3>
+                    <ul>
+                        <li>TikTok 视频创作：为短视频添加配音</li>
+                        <li>广告和品牌营销：为品牌内容制作专业配音</li>
+                        <li>教育视频：制作教学视频的配音</li>
+                        <li>虚拟主播和动画：为动画角色配音</li>
+                        <li>播客和有声书：为播客节目或有声书生成清晰的语音内容</li>
+                    </ul>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q8: 这个网站如何保障我的隐私？</h3>
+                    <p>我们非常重视用户隐私，严格遵守 GDPR 等隐私保护规定，不会保存或泄露用户的文本内容和生成的语音文件。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q9: 我需要付费吗？</h3>
+                    <p>基础功能完全免费，可以满足大多数用户的需求。如需更多高级功能，可以考虑升级到付费版本。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q10: 如何开始使用 TikTok 语音生成器？</h3>
+                    <ul>
+                        <li>输入文本：在文本框中输入需要转换的内容</li>
+                        <li>选择语言风格：选择合适的语音风格</li>
+                        <li>生成并试听：点击生成按钮并试听效果</li>
+                        <li>下载音频：如果满意，点击下载按钮保存</li>
+                    </ul>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q11: 有没有提供批量生成功能？</h3>
+                    <p>是的，付费版用户可以使用批量生成功能，提高工作效率。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q12: 如果我对生成的语音不满意怎么办？</h3>
+                    <p>您可以尝试调整语速参数，或者更换不同的语音风格，直到找到最适合的效果。</p>
+                </div>
+
+                <div class="qa-item">
+                    <h3>Q13: 支持哪些设备和平台？</h3>
+                    <p>我们的网站支持所有主流设备和平台，包括电脑、手机、平板等，可以通过浏览器直接访问使用。</p>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html> 
