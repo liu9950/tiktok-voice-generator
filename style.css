@@ -207,3 +207,65 @@ input[type="range"]::-moz-range-thumb {
     margin-bottom: 8px;
     line-height: 1.5;
 }
+
+/* Hugging Face iframe 容器样式 */
+.huggingface-container {
+    margin: 30px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 音频结果容器样式 */
+.audio-result {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+}
+
+.error-message {
+    color: #ff5b5b;
+    text-align: center;
+    padding: 10px;
+}
+
+#audio-player {
+    width: 100%;
+    margin: 10px 0;
+}
+
+#audio-player audio {
+    width: 100%;
+}
+
+.huggingface-link {
+    margin: 30px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.hf-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 24px;
+    background-color: #ff5b5b;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+.hf-button:hover {
+    background-color: #e44d4d;
+}
